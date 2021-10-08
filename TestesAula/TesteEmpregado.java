@@ -7,7 +7,7 @@ public class TesteEmpregado {
 		Empregado lista[] = new Empregado[3];
 		
 		lista[0] = new Empregado("Gabriel Mendes",3500);
-		lista[1] = new Empregado("Luis Roberto",12000);
+		lista[1] = new Empregado("Luis Roberto",10000);
 		lista[2] = new Empregado("Tia Jess",6000);
 		
 		for(Empregado a:lista) {
