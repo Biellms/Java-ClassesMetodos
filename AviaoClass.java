@@ -25,9 +25,9 @@ public class AviaoClass {
 	}
 	
 	// Métodos
-	public void iniciarVoou() { 
+	public void iniciarVoou() {	
 		int i;
-		for (i = 3; i >= 1; i--) {
+		for (i = 3; i >= 1; i--) {	// Contador de decolagem
 			System.out.print("\n "+i);
 			try { Thread.sleep (1000); } catch (InterruptedException ex) {}
 			}
@@ -36,7 +36,7 @@ public class AviaoClass {
 	
 	public void Pousar() {
 		int i;
-		for (i = 1; i <= 3; i++) {
+		for (i = 1; i <= 3; i++) {	// Contador da viagem
 			System.out.print("\n "+i);
 			try { Thread.sleep (1000); } catch (InterruptedException ex) {}
 			}
