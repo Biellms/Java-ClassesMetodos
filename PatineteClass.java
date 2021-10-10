@@ -5,6 +5,7 @@ public class PatineteClass {
 	// Atributos
 	private String modelo;
 	private String cor;
+	private int cont;
 	
 	// Construtor
 	public PatineteClass (String modelo, String cor) {
@@ -23,17 +24,16 @@ public class PatineteClass {
 	
 	public void acelerar() {
 		System.out.print("\n ----------------------");
+		cont++;
 		System.out.print("\n VOCE ACELEROU!");
+		System.out.print("\n Velocidade: "+cont);
 		System.out.print("\n ----------------------\n");}
 	
 	public void frear() { 
 		System.out.print("\n ----------------------");
+		if (cont > 0) {cont--;} else { System.out.println("\n VOCE NÃO PODE FREAR,\n POIS JÁ ESTÁ PARADO!");}
 		System.out.print("\n VOCE FREOU!");
-		System.out.print("\n ----------------------\n");}
-	
-	public void parar() { 
-		System.out.print("\n ----------------------");
-		System.out.print("\n VOCE PAROU!");
+		System.out.print("\n Velocidade: "+cont);
 		System.out.print("\n ----------------------\n");}
 
 	// Get e Set
